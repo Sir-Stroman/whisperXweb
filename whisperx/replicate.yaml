@@ -1,0 +1,12 @@
+name: yourusername/whisperx-replicate
+version: "0.1.0"
+predict:
+  command: "python predict.py"
+  inputs:
+    audio_url:
+      type: string
+      description: "The URL of the audio file to transcribe"
+    model_size:
+      type: string
+      default: "base"
+      description: "Size of the Whisper model to use (e.g., tiny, base, small, medium, large)"
